@@ -23,7 +23,7 @@ dictionary myDictionary;
 dictionary::hasher string_hash = myDictionary.hash_function();
 ofstream outFile;
 
-//Vertex structure, stores the word and a num for easy lookup in an array
+//Vertex structure, stores the word and a isVisited boolean to prevent cycles
 //also contains a list of neighbors and a pointer to a parent vertex for easy traversal back through the word ladder
 struct Vertex {
 	string word;
